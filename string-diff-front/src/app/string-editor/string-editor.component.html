@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+	<form id="msform">
+		<fieldset>
+			<h2 class="fs-title">String Differentiator</h2>
+			<h3 class="fs-subtitle">Enter two strings</h3>
+			<input type="text" [(ngModel)]="strings.first" name="first" placeholder="First string" /> 
+			<input type="text" [(ngModel)]="strings.second" name="second" placeholder="Second string" /> 
+			<button (click)="differentiate()" name="next" class="next action-button">Mix</button>
+		</fieldset>
+		<fieldset>
+			<h2 class="fs-title">String Differentiator</h2>
+			<h3 class="fs-subtitle">Go back to retry</h3>
+			<div class="output-div">
+				<output name="result" class="result">{{output.result}}</output>
+			</div>
+			<input type="button" name="previous" class="previous action-button"
+				value="Go back" />
+		</fieldset>
+	</form>
+
+</body>
+</html>
