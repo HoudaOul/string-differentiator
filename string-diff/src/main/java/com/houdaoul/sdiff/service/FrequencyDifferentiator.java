@@ -24,11 +24,10 @@ import org.springframework.stereotype.Service;
 public class FrequencyDifferentiator implements Differentiator {
 
 	/**
-	 * Utility method to return the mapping between each lowercase character and
-	 * its number of occurrences.
+	 * Utility method to return the mapping between each lowercase character and its
+	 * number of occurrences.
 	 *
-	 * @param s
-	 *            the target string
+	 * @param s the target string
 	 * @return A new {@link Map<Character, Long>} denoting the frequency map
 	 *         obtained.
 	 */

@@ -22,6 +22,11 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
+/**
+ * 
+ * @author houlachguer
+ *
+ */
 //@WebMvcTest
 @SpringBootTest(classes = { StringDiffApplication.class, DifferConfiguration.class, Differentiator.class })
 @AutoConfigureMockMvc

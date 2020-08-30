@@ -11,6 +11,8 @@ import org.springframework.web.servlet.HandlerInterceptor;
 /**
  * Block requests from getting processed if the threshold configured is
  * exceeded.
+ * 
+ * @author houlachguer
  */
 public class RateLimiterInterceptor implements HandlerInterceptor {
 
