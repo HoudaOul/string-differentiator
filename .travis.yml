@@ -4,6 +4,7 @@ matrix:
     - language: java
       jdk: openjdk11
       dist: trusty
+      install:
       before_script:
         - cd string-diff
         - mvn clean
