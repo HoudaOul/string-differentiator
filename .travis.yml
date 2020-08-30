@@ -4,7 +4,6 @@ matrix:
     - language: java
       jdk: openjdk11
       dist: trusty
-      install:
       before_script:
         - cd string-diff
         - mvn clean
@@ -18,6 +17,6 @@ matrix:
       sudo: required
       before_script:
         - cd string-diff-front
-        - npm install
+        - npm install @angular/cli@1.7.4 -g
       script:
         - npm run build
