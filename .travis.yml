@@ -1,1 +1,22 @@
-language: java
+matrix:
+  include:
+
+    - language: java
+      jdk: openjdk11
+      dist: trusty
+      before_script:
+        - cd string-diff
+        - mvn clean
+      script:
+        - mvn package
+        
+    - language: node_js
+      node_js:
+        - "9.4.0"
+      dist: trusty
+      sudo: required
+      before_script:
+        - cd string-diff-front
+        - npm install
+      script:
+        - npm run build
