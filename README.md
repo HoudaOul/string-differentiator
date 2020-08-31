@@ -62,7 +62,8 @@ After filling the form, You will get the result as described in the first sectio
 - JUnit
 ### Build and CI  
 - Maven
-- Travis CI
+- Travis CI  
+  ![Travis CI passing](screenshots/TravisCI-passing.PNG)  
     
 ## Build and Usage  
 First, you need to clone the project:  
